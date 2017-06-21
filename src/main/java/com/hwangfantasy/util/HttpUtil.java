@@ -394,9 +394,7 @@ public class HttpUtil {
     }
 
     public static void main(String[] args) throws IOException {
-        // String result = getUrlAsString("http://www.gewara.com/");
-        // System.out.println(result);
-        downloadFile("D:/car_common.js",
+        downloadFile(System.getProperty("user.dir") + File.separator +"car_common.js",
                 "https://www.epicc.com.cn/wap/js/carProposal/car_common.js");
     }
 }
