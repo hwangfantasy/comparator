@@ -5,7 +5,7 @@ import java.util.HashMap;
 import java.util.Map;
 
 /**
- * @作者 yunfeiyang
+ * @作者 hwangfantasy
  * @创建时间: 2017/6/21 <br/>
  * @方法描述: CronEnum. <br/>
  */
@@ -14,7 +14,8 @@ public enum CronEnum {
     EVERYTENSECOND("*/10 * * * * ?","每10秒"),
     EVERYFIVEMINUTE("0 0/5 * * * ?","每5分钟"),
     EVERYONEHOUR("0 0 0/1 * * ?","每1小时"),
-    EVERYDAYONECLOCK("0 0 1 * * ?","每天1点");
+    EVERYDAYONECLOCK("0 0 1 * * ?","每天1点"),
+    EVERYDAYFIFTEENCLOCK("0 0 15 * * ?","每天15点");
 
     private String cron;
     private String desc;

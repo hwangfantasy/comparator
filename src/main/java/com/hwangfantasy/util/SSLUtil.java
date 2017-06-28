@@ -6,7 +6,7 @@ import java.security.SecureRandom;
 import java.security.cert.X509Certificate;
 
 /**
- * @作者 yunfeiyang
+ * @作者 hwangfantasy
  * @创建时间: 2017/6/21 <br/>
  * @方法描述: SSLUtil. <br/>
  */
@@ -145,7 +145,7 @@ public class SSLUtil {
      *
      * @author Francis Labrie
      *
-     * @deprecated see {@link SSLUtil.FakeHostnameVerifier}.
+     * @deprecated see {@link FakeHostnameVerifier}.
      */
     public static class _FakeHostnameVerifier implements com.sun.net.ssl.HostnameVerifier {
         /**
@@ -167,7 +167,7 @@ public class SSLUtil {
      *
      * @author Francis Labrie
      *
-     * @deprecated see {@link SSLUtil.FakeX509TrustManager}.
+     * @deprecated see {@link FakeX509TrustManager}.
      */
     public static class _FakeX509TrustManager implements com.sun.net.ssl.X509TrustManager {
         /**
@@ -219,7 +219,7 @@ public class SSLUtil {
          * @param session the SSL session used on the connection to host.
          * @return the true boolean value indicating the host name is trusted.
          */
-        public boolean verify(String hostname, javax.net.ssl.SSLSession session) {
+        public boolean verify(String hostname, SSLSession session) {
             return (true);
         } // verify
     } // FakeHostnameVerifier
