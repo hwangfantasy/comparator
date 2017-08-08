@@ -8,7 +8,7 @@ http://code.google.com/p/google-diff-match-patch/
 ```
  <repository> 
   <id>maven-repo-master</id>  
-  <url>https://raw.github.com/hwangfantasy/maven-repo/smart-util/</url>  
+  <url>https://raw.github.com/hwangfantasy/maven-repo/fantasy-difference/</url>  
   <snapshots> 
     <enabled>true</enabled>  
     <updatePolicy>always</updatePolicy> 
@@ -18,9 +18,9 @@ http://code.google.com/p/google-diff-match-patch/
 - 然后再加入依赖
 ```
 <dependency> 
-  <groupId>com.hwangfantasy</groupId>  
-  <artifactId>smart-util</artifactId>  
-  <version>1.0-SNAPSHOT</version> 
+   <groupId>com.hwangfantasy</groupId>
+   <artifactId>fantasy-difference</artifactId>
+   <version>1.0-SNAPSHOT</version>
 </dependency>
 ```
 ---
